@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(248, 203, 0, 1);
-    height: 12rem;
-    padding: 3rem 8% 0 8%;
+    height: 10rem;
+    padding: 2%;
     width: 100%;
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 import Logo from '../Logo/Logo';
 import Contact from '../Contact/Contact';
+import Navigation from '../TopNavigation/Navigation';
 
 class Header extends React.Component{
     render(){
@@ -10,6 +11,7 @@ class Header extends React.Component{
             <div className="header-top-container">
                 <Logo />
                 <Contact />
+                <Navigation />
             </div>
         </div>
         )       
