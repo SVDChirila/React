@@ -1,5 +1,6 @@
 import React from 'react'
 import Categories from '../Categories/Categories'
+import './Main.css'
 
 
 class Main extends React.Component {
@@ -31,8 +32,10 @@ class Main extends React.Component {
     render(){
         return(
             <div className="content">
-            <Categories />
+                
+            <Categories categories={this.state.categories}/>
             </div>
+            
         )
     }
 
