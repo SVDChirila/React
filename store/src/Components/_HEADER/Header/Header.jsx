@@ -3,6 +3,7 @@ import './Header.css'
 import Logo from '../Logo/Logo';
 import Contact from '../Contact/Contact';
 import Navigation from '../TopNavigation/Navigation';
+import Search from '../Searchbar/Search';
 
 class Header extends React.Component{
     render(){
@@ -12,6 +13,12 @@ class Header extends React.Component{
                 <Logo />
                 <Contact />
                 <Navigation />
+               
+            </div>
+            <div className="header-bottom">
+
+                <Search />
+
             </div>
         </div>
         )       

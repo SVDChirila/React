@@ -1,0 +1,53 @@
+.categories {
+    position: absolute;
+    margin-top: -5.5rem;
+    background: #fff;
+    width: 17%;
+    left: 3%;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1)
+}
+
+.categories ul{
+    text-align: left;
+}
+
+.face-list{
+    padding: 0;
+}
+
+.categories-item a {
+   text-decoration: none;
+   color: #222;
+}
+
+.categories-item {
+   list-style-type: none;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.categories-item ul {
+   margin-top: 1rem;
+}
+
+.all-categ {
+    font-size: 0.8rem;
+    color: #999;
+    font-weight: 600;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+
+.items {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    font-size: 0.7rem;
+}
+
+.items a {
+    color: #888;
+}
