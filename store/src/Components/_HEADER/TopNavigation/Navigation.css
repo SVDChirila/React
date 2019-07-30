@@ -24,3 +24,14 @@
     /* font-size: 3rem; */
     text-decoration: none;
 }
+
+
+@media(max-width: 1200px){
+    .navigation {
+        width: 100%;
+    }
+
+    .menu-item {
+        margin-left: 3rem;
+    }
+}

@@ -8,6 +8,7 @@
 }
 
 .contact a{
+    color:rgba(99, 100, 216, 1);
     text-decoration: none;
     margin-left: 0.5rem;
 }
@@ -21,4 +22,9 @@
 .contact i {
     margin-right: 0.5rem;
     color: "#8077aa"
+}
+@media(max-width: 1200px){
+    .contact {
+        display: none;
+    }
 }

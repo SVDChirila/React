@@ -6,3 +6,8 @@
     text-decoration: none;
     line-height: 1rem;
 }
+@media(max-width: 1200px){
+    .logo {
+        width: 50%;
+    }
+}

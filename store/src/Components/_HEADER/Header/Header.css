@@ -12,3 +12,10 @@
     /* justify-content: space-between; */
     padding-top: 1rem;
 }
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem 0 20rem;
+}
