@@ -11,6 +11,7 @@ const Categories = (props) => {
 
     return (
         <div className="categories">
+            <p className="all-categ">All Categories</p>
         {categories.map((category,index) =>{
             return <button key={index} className="button-category-name">{category}</button>
         })}
