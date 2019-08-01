@@ -1,6 +1,6 @@
 import React from 'react'
 import './Categories.css'
-import Subcateg from './Subcateg/Subcateg'
+
 
 
 
@@ -26,8 +26,9 @@ class Categories extends React.Component {
         return (
             
             <div className="categories" >
+                <p className="all-categ">All categories</p>
                 {this.categoryTitles.map((cat,index) => 
-                    <div key={index}>
+                    <div className="current-cat" key={index}>
                 <button className="button-category-name" onClick={()=>this.press(cat)} >{cat}</button>
 
                 

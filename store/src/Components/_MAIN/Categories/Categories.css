@@ -20,6 +20,7 @@
      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
      display:flex;
      flex-direction: column;
+     align-items: baseline;
      
      
 }
@@ -32,4 +33,8 @@
     text-align: left;
     text-transform: uppercase;
 
+}
+
+.current-cat{
+    text-align: left;
 }
