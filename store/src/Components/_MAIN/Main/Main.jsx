@@ -1,6 +1,8 @@
 import React from 'react'
 import Categories from '../Categories/Categories'
 import './Main.css'
+import Sort from '../Sort/Sort'
+import Products from '../Products/Products'
 
 
 class Main extends React.Component {
@@ -40,6 +42,8 @@ class Main extends React.Component {
             <div className="content">
                 
             <Categories categories={this.state.categories} />
+            <Sort />
+            <Products />
             </div>
             
         )
