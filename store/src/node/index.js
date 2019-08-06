@@ -7,6 +7,8 @@ const path = require('path');
 
 http.createServer((req, res) => {
 
+    res.setHeader('Access-Control-Allow-Origin', '*')
+
 
     if ((/^\/categories($|\/$)/gi).test(req.url)) {
     categTest(req, res);
