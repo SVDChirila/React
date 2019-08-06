@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name" : "Face",
+        "children": [ "Creams & Gels",
+            "Patches",
+            "Emulstions",
+            "Tonners",
+            "Face Cleansing",
+            "Make-up Removal",
+            "Scrubs",
+            "Peeling",
+            "Masks"]
+    },
+
+    {
+        "id": 2,
+        "name" : "Body",
+        "children":[]
+    },
+
+
+    {
+        "id":3,
+        "name":"Foot",
+        "children":[]
+    },
+
+    {
+        "id":4,
+        "name":"Hands",
+        "children":[]
+    },
+
+    {
+        "id":5,
+        "name":"Hair",
+        "children":[]
+    },
+
+    {
+        "id":6,
+        "name":"Makeup",
+        "children":[]
+    }
+
+
+]
