@@ -2,16 +2,17 @@ const prod = require('../prod.json')
 
 const getProd = (req,res) =>{
     
-    const id = req.params.id;
-   if(req.query !== {}){
+    
+   if(Object.keys(req.query).length !== 0){
        const query = prod.filter(item =>{
         return (item.manufacturerid == parseInt(req.query.manufacturerid) && item.categories == parseInt(req.query.categories))
         })
-       console.log(query)
+    //    console.log(query)
        res.status(200).json({data:[JSON.stringify(query)]})
-   }
+   }else{
     
     res.status(200).json({data: [JSON.stringify(prod)]});
+   }
 }
 
 const getProdByID = (req,res) =>{
