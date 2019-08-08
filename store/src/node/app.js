@@ -1,21 +1,38 @@
 // ------------------ IMPORTS -------------------- //
 const express = require('express')
 const app = express();
-const http = require('http')
+const cors = require('cors')
 const prodRoute = require('./routes/prod')
 const categRoute = require('./routes/categories')
 const bodyParser = require('body-parser');
+// const {server} = require('./bin/www')
+const { errorHandler } = require('./middleware/errorHandler')
 // ---------------------------------------------- //
 
+const whitelist = ["http://localhost:3000"];
+const corsOptions = {
+ origin: (origin, callback) => {
+   if (whitelist.indexOf(origin) !== -1) {
+    callback(new Error("Not allowed by CORS"));
+     
+   } else {
+    callback(null, true);
+   }
+ }
+};
 
-const server = http.createServer(app)
+app.use(cors(corsOptions));
 
-
+app.use(bodyParser.json());
 app.use('/', prodRoute)
 app.use('/', categRoute)
 app.use(express.urlencoded({extended: false}))
-app.use(bodyParser.json());
 
-server.listen(5000)
+app.use('/',errorHandler);
+
+module.exports = {app}
+
+
+
 
 
