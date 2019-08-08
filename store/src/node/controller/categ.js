@@ -1,9 +1,9 @@
 const categ = require('../categories.json');
-const prod = require('../prod.json')
+const prod = require('../../Components/_MAIN/Products/ProductsList.json')
 
 
 const getCateg = (req, res) => {
-    res.status(200).json({ data: [JSON.stringify(categ)] });
+    res.status(200).json({ data: categ });
 }
 
 const getCategByID = (req, res) => {
@@ -14,7 +14,7 @@ const getCategByID = (req, res) => {
     if(categID.length === 0){
         res.status(404).json({data:"File not found!"})
     }else{
-        res.status(200).json({ data: [JSON.stringify(categID)] });
+        res.status(200).json({ data: categID });
     }
 
     

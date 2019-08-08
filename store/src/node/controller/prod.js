@@ -1,4 +1,5 @@
-const prod = require('../prod.json')
+const prod = require('../../Components/_MAIN/Products/ProductsList.json')
+
 
 const getProd = (req, res) => {
 
@@ -9,10 +10,10 @@ const getProd = (req, res) => {
                 (item.categories == parseInt(req.query.categories))
         })
         //    console.log(query)
-        res.status(200).json({ data: [JSON.stringify(query)] })
+        res.status(200).json({ data: query })
     } else {
 
-        res.status(200).json({ data: [JSON.stringify(prod)] });
+        res.status(200).json({data: prod});
     }
 }
 
